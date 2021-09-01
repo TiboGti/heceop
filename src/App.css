@@ -1,38 +1,34 @@
-.App {
-  text-align: center;
+@import url("https://p.typekit.net/p.css?s=1&k=gqc6rjc&ht=tk&f=13378.13379.13380.13381.18220.18221.18222.18223.18304.18305.18306.18307.18219.18239.18240.18241.18242&a=84231138&app=typekit&e=css");
+
+
+body{
+margin: 0;
+padding: 0;
+font-family: "utopia-std";
+
+}
+.App{
+margin: 0;
+padding: 0;
+height: 100vh;
+position: fixed;
+right: 0;
+left: 0;
+top: 0;
+bottom: 0;
+}
+.App{
+  background: linear-gradient( 90deg, #fffaf5 57%,#fef0f2 43%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+   
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.container{
+
+    padding-inline: 10%;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
