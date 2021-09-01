@@ -5,9 +5,12 @@ body{
 margin: 0;
 padding: 0;
 font-family: "utopia-std";
+box-sizing: border-box;
 
 }
 .App{
+
+  box-sizing: border-box;
 margin: 0;
 padding: 0;
 height: 100vh;
@@ -17,6 +20,8 @@ left: 0;
 top: 0;
 bottom: 0;
 }
+
+
 .App{
   background: linear-gradient( 90deg, #fffaf5 57%,#fef0f2 43%);
 }

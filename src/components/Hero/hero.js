@@ -1,12 +1,17 @@
 import React from 'react'
 import './hero.css'
+import Search from '../../assets/ico/search.png'
+import Model from '../../assets/img/model-hero.png'
+import Glasses from '../../assets/img/glasses.png'
 
 
 const hero = () => {
     return (
         <div>
             <div className="main-container container">
-                
+                    <div className="container-model">
+                        <img src={Model} alt="" />
+                    </div>
                     <div className="box-1">
                         <div className="hero-content">
                             <h4>#1 the best Glasses</h4>
@@ -18,7 +23,9 @@ const hero = () => {
 
                             <div className="input-container">
                                 <input type="search" name="busqueda" placeholder="Search product to apply" />
-                                <button> ico</button>
+                                <button className="btn-search"><span>
+                                        <img src={Search} alt="" />
+                                    </span> </button>
                             </div>
 
 
@@ -34,7 +41,7 @@ const hero = () => {
 
                             <div className="card">
                                 <div className="img-card">
-                                    <img src="" alt="" />
+                                    <img src={Glasses} alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h6>1. Luminette Pro Glasses</h6>
@@ -45,7 +52,7 @@ const hero = () => {
 
                             <div className="card">
                                 <div className="img-card">
-                                    <img src="" alt="" />
+                                    <img src={Glasses} alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h6>2. Luminette Glasses</h6>
@@ -56,7 +63,7 @@ const hero = () => {
 
                             <div className="card">
                                 <div className="img-card">
-                                    <img src="" alt="" />
+                                    <img src={Glasses} alt="" />
                                 </div>
                                 <div className="card-body">
                                     <h6>3. ReTimer Glasses</h6>

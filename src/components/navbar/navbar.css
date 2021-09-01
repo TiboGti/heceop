@@ -40,9 +40,15 @@ font-size: 2.5rem;
 
 .btn{
     display: none;
-    
+    background-color: transparent;
+    border: none;
 
 }
+
+.btn:hover{
+  
+}
+
 @media screen and (max-width:1300px) {
     
     .nav-logo h1{
@@ -63,7 +69,10 @@ font-size: 2.5rem;
 
 
 @media screen and (max-width:980px) {
-   
+    
+    .btn span img{
+        width: 33px;
+    }
    
     .nav-items{
 
@@ -79,6 +88,7 @@ font-size: 2.5rem;
         flex-direction: column;
         height: auto;
         width: 100%;
+        display: none;
     }
     .item:nth-child(1){
         border-top: 1px solid #fff;
@@ -93,4 +103,17 @@ font-size: 2.5rem;
     .btn{
         display: block;
     }
+}
+.nav-items-shop .list .item span{
+    position: relative;
+   height: auto;
+   margin-inline-end: 5px;
+}
+.nav-items-shop .list .item span img{
+
+    position: absolute;
+    margin-inline-start: 6px;
+    left: 1;
+
+    width: 22px;
 }

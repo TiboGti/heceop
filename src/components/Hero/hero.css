@@ -2,7 +2,7 @@
     box-sizing: border-box;
     width: 100%;
     height: 90vh;
-
+    position: relative;
     display: grid;
     grid-template-columns: 3fr 2fr;
     grid-template-rows: 6fr 1fr;
@@ -23,7 +23,7 @@
 .box-1{
     grid-column: 1;
     grid-row: 1;
-    
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -85,12 +85,56 @@
     background-color: transparent;
     border:1px solid gray;
     margin: 0 1rem 0 0 ;
+    font-family: "utopia-std";
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 .btn-hero:hover{
     background-color: rgba(0,0, 0, 0.1);
     transition: all 0.3 ease;
+    color: white;
 }
 
+.btn-search{
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    align-items: center;
+    padding-block-start: 5px;
+    pointer-events: visibleFill;
+}
+
+.btn-search span img{
+    width: 22px;
+    
+}
+.container-model{
+    position: absolute;
+    bottom: 48%;
+    left: 65%;
+    transform: translateX(-70%);
+    
+}
+
+.container-model img{
+
+    width: 70%;
+
+}
+
+.card{
+    display: flex;
+    margin: 0.5rem;
+}
+
+.img-card{
+    padding-inline: 0.3rem;
+}
+
+.img-card img{
+    width: 70px;
+    
+}
 @media screen and (min-width:2000px){
     .container{
         padding-inline: 20%;
@@ -156,6 +200,14 @@
         font-weight: 900;
     }
 
+    .container-model{
+        position: absolute;
+        bottom: 38%;
+        left: 68%;
+        transform: translateX(-70%);
+        
+    }
+
     
 }
 
@@ -197,6 +249,13 @@
         font-weight: 900;
     }
 
+    .container-model{
+        position: absolute;
+        bottom: 33%;
+        left: 70%;
+        transform: translateX(-70%);
+        
+    }
 
     
 }
@@ -241,6 +300,59 @@
         padding-inline: 8%;
     }
 
+    .container-model{
+        position: absolute;
+        bottom: 36%;
+        left: 69%;
+        transform: translateX(-70%);
+        
+    }
+
     
 }
 
+
+
+@media screen and (max-width:900px){
+
+    .main-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        
+    }
+
+    .box-1{
+        grid-column: 1;
+        grid-row: 1;
+        
+    }
+
+    .box-2{
+        grid-column: 1;
+        grid-row: 3;
+        display: block;
+    }
+
+    .App{
+        position: relative;
+        height: 100vh;
+        overflow: auto;
+    }
+
+    .box-1, .box-2,.box-3{
+        box-sizing: border-box;
+        padding: 0%;
+    }
+    
+    .container-model{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:500px){
+
+    .App{
+        background: linear-gradient( 90deg, #fffaf5 80%,#fef0f2 20%);
+    }
+}

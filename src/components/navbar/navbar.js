@@ -1,5 +1,8 @@
 import React from 'react'
 import './navbar.css'
+import Menu from '../../assets/ico/menu.png'
+import Shop from '../../assets/ico/shop.png'
+import Login from '../../assets/ico/login.png'
 
  const navbar = () => {
     return (
@@ -18,12 +21,12 @@ import './navbar.css'
                     </div>
                         <div className="nav-items-shop">
                             <ul className="list">
-                                <li className="item">cart</li>
-                                <li className="item">jep</li>
+                                <li className="item">cart <span><img src={Shop} alt="" /></span></li>
+                                <li className="item">jep <span><img src={Login} alt="" /></span></li>
                             </ul>
                         </div>
                     <button className="btn">
-                        Btn
+                       <span><img src={Menu} alt="" /></span>
                     </button>
 
              </nav>
